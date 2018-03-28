@@ -1,8 +1,9 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group = 'com.github.shenqforever'
 
 android {
     compileSdkVersion 26
-
 
 
     defaultConfig {
@@ -21,14 +22,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    task makeJar(type: Copy) {
-        delete 'build/libs/testtils.jar'
-        from('build/intermediates/bundles/release/')
-        into('build/libs/')     include('classes.jar')
-        rename ('classes.jar', 'testtils.jar')
-    }
 
-    makeJar.dependsOn(build)
 }
 
 dependencies {

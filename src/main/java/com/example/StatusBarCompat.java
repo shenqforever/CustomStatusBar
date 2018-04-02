@@ -1,7 +1,9 @@
 package com.example;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Build;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +12,9 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 
 import com.example.mylibrary.R;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 /**
  * Created by sq719 on 2018/3/21.
@@ -30,6 +35,11 @@ public class StatusBarCompat {
             //设置透明状态栏
             ac.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             ac.getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            //android 6.0 提供的api 如果布局为白色 更换状态栏字体颜色
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                //设置状态栏文字颜色及图标为深色
+                ac.getWindow().getDecorView().setSystemUiVisibility( View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+            }
             try {
                 //自定义颜色
                 ac.getWindow().setStatusBarColor(ac.getResources().getColor(color));
@@ -85,6 +95,7 @@ public class StatusBarCompat {
         if (rootView != null) {
             rootView.setFitsSystemWindows(true);
             rootView.setClipToPadding(true);
+            ac.getWindow().getDecorView().setSystemUiVisibility(rootView.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         }
     }
 

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dark">#FF222222</color>
+    <color name="reg_color">#2d95e6</color>
+    <color name="light">#FFEEEEEE</color>
+    <color name="white">#ffffff</color>
+    <color name="f4">#f4f4f4</color>
+    <color name="gray_white">#cacaca</color>
+    <color name="black">#000000</color>
+    <color name="c_share">#FECD4C</color>
+    <color name="black_1">#333333</color>
+    <color name="l_rad">#fe4f51</color>
+    <color name="l_rad_s">#ff5256</color>
+    <color name="gray">#E6E6E6</color>
+    <color name="deep_gray">#c3c3c3</color>
+    <color name="red">#F36D60</color>
+    <color name="green">#32aa46</color>
+    <color name="rad_t">#fe4f51</color>
+    <color name="r_e">#ff6567</color>
+    <color name="y_fs">#8b0476</color>
+    <color name="blue">#41A9F2</color>
+    <color name="layout_gray_background">#f7f7ff</color>
+    <color name="layout_orange_background">#FC5D0B</color>
+    <color name="orange">#FF6633</color>
+    <color name="buy_c">#fe4f51</color>
+    <color name="f_orange">#fe6469</color>
+    <color name="orange_light">#55FF6633</color>
+    <color name="orange_dark">#D84B00</color>
+    <color name="gesture_background">#ff303237</color>
+    <color name="color_hei_8">#00000000</color>
+    <color name="text_color_gray">#666666</color>
+    <color name="text_color_light_gray">#999999</color>
+    <color name="text_color_light_orange">#ffcc33</color>
+    <color name="login_color">#40BEEF</color>
+    <drawable name="trans">@color/color_hei_8</drawable>
+    <color name="color_home_page">#6DE2F7</color>
+    <color name="trans">#00000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="a_grag">#f8f8f8</color>
+    <!-- 红色 选择城市那里 -->
+    <color name="select_city_red">#c53c3d</color>
+    <!-- loopindicator -->
+    <!-- 是否居中显示 -->
+    <bool name="default_circle_indicator_centered">true</bool>
+
+    <!-- 选中时的颜色 -->
+    <color name="default_circle_indicator_fill_color">#FFFFFF</color>
+    <!-- 未选中时的颜色 -->
+    <color name="default_circle_indicator_page_color">#E93333</color>
+    <!-- E93333 -->
+
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <!-- 圆点的半径大小 -->
+    <dimen name="default_circle_indicator_radius">2.5dip</dimen>
+    <!-- 选择false时会有滑动动画 -->
+    <bool name="default_circle_indicator_snap">false</bool>
+    <!-- 未选中时周围圈的颜色 -->
+    <color name="default_circle_indicator_stroke_color">#FF0000</color>
+    <!-- FF0000 -->
+    <!-- 未选中时周围圈的宽度 -->
+    <dimen name="default_circle_indicator_stroke_width">0.5dip</dimen>
+
+    <color name="orange_white">#FFDED2</color>
+    <color name="text_color_orange">#fe7040</color>
+    <color name="text_color_black">#333333</color>
+    <color name="text_color_gray_light">#b9b9b9</color>
+    <color name="deivider">#dcdcdc</color>
+
+    <color name="rb_text_color">#606060</color>
+    <color name="white_light">#ffdacf</color>
+
+    <color name="rb_choose_color">#ff6633</color>
+
+    <color name="divide">#eeeeee</color>
+</resources>
